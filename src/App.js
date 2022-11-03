@@ -22,7 +22,7 @@ function App() {
     })
     setTimeout(()=>{
       setAlert(null);
-    },5000)
+    },2000)
 
   }
   const toogleMode =()=>{
@@ -45,8 +45,9 @@ function App() {
         <Alert alert={alert} />
         < div className="container">
           <Routes>
-            <Route path="/" element={<Textform/>}>   
-            <Route path="about" element={<About/>} />
+            <Route path="/" element={<Textform/>}/>   
+            <Route path="/about" element={<About/>}>
+              
              </Route>
           </Routes>
         </div>
